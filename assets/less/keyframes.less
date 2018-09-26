@@ -1,0 +1,79 @@
+.keyframes(@name,@rules) {
+
+    @-webkit-keyframes @name {
+        @rules();
+    }
+
+    @-moz-keyframes @name {
+        @rules();
+    }
+
+    @-ms-keyframes @name {
+        @rules();
+    }
+
+    @-o-keyframes @name {
+        @rules();
+    }
+
+    @keyframes @name {
+        @rules();
+    }
+}
+
+.keyframes(design, {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%;
+    }
+});
+
+.design {
+    width: 75%;
+    animation: design 2s ease-out;
+    -ms-animation: design 2s ease-out;
+    -moz-animation: design 2s ease-out;
+    -webkit-animation: design 2s ease-out;
+    -o-animation: design 2s ease-out;
+}
+
+.keyframes(development, {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+});
+
+.development {
+    width: 90%;
+    animation: development 2s ease-out;
+    -ms-animation: development 2s ease-out;
+    -moz-animation: development 2s ease-out;
+    -webkit-animation: development 2s ease-out;
+    -o-animation: development 2s ease-out;
+}
+
+.keyframes(marketing, {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    }
+});
+
+.marketing {
+    width: 65%;
+    animation: marketing 2s ease-out;
+    -ms-animation: marketing 2s ease-out;
+    -moz-animation: marketing 2s ease-out;
+    -webkit-animation: marketing 2s ease-out;
+    -o-animation: marketing 2s ease-out;
+}
