@@ -36,6 +36,7 @@ $('.animated-icon3').toggleClass('open');
 
 $('.nav-link').on('click', function () {
 $('.collapse').removeClass('show');
+$('.animated-icon3').removeClass('open');
 });
 
 new WOW().init();
